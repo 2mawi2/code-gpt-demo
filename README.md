@@ -51,8 +51,9 @@ With the virtual environment activated, you can run the program using the follow
 ```bash
 python3 codegpt/main.py
 -e 
+```
 
 ## Slides
 
-The slides for the talk related to this project can be found [here](KI-Programmierung.pdf).
+The slides for the talk related to this project can be found [here](./KI-Programmierung.pdf).
 
