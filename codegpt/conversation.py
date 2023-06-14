@@ -4,11 +4,11 @@ from enum import Enum
 
 
 class Model(Enum):
-    GPT_4 = "gpt-4"
+    GPT_4 = "gpt-4-0613"
 
 
 def argparse_model_type(model_str):
-    if model_str.lower() == "gpt-4":
+    if model_str.lower() == "gpt-4-0613":
         return Model.GPT_4
     else:
         raise argparse.ArgumentTypeError(f"Model {model_str} is not supported.")
