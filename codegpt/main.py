@@ -2,9 +2,6 @@ import os
 import platform
 import re
 import subprocess
-import sys
-
-import openai
 from simple_term_menu import TerminalMenu
 
 from conversation import Conversation
@@ -34,13 +31,6 @@ def main():
         print("Sent this conversation to OpenAI:")
         print(conversation)
 
-    openai.api_key = os.environ.get("OPENAI_API_KEY")
-    if openai.api_key is None:
-        print("To use codegpt please set the OPENAI_API_KEY environment variable")
-        print("You can get an API key from https://beta.openai.com/account/api-keys")
-        print("To set the environment variable, run:")
-        print("export OPENAI_API_KEY=<your key>")
-        sys.exit(1)
 
     response = fetch_and_print_cmd(conversation)
 
